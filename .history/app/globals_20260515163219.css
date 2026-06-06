@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-poppins);
+}
+
+body {
+  background-color: white;
+  color: #171717;
+  min-height: 100vh;
+}
+
+html.dark body {
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+html.dark .bg-gray-50 {
+  background-color: #1a1a2e;
+}
+
+html.dark .bg-gray-100 {
+  background-color: #374151;
+}
+
+html.dark .bg-white {
+  background-color: #1f2937;
+}
+
+html.dark .border-gray-200 {
+  border-color: #374151;
+}
+
+html.dark footer {
+  background-color: #111827;
+}
+
+html.dark p,
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4 {
+  color: #e5e7eb;
+}
+
+html.dark svg {
+  color: #e5e7eb;
+}
+
+html.dark .text-yellow-400 {
+  color: #fbbf24;
+}
+
+.nepali-desc {
+  font-family: "Mukta", "Noto Sans Devanagari", sans-serif;
+  font-size: 0.91rem;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.7;
+  text-align: justify;
+  color: #1a1a1a;
+  transition: all 0.25s ease;
+}
+
+.nepali-fonts {
+  font-family: "Mukta", "Noto Sans Devanagari", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.7;
+  text-align: justify;
+  color: #1a1a1a;
+  transition: all 0.25s ease;
+}

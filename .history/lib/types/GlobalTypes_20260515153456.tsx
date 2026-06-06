@@ -1,0 +1,101 @@
+// Reusable Input Component
+import Image, { StaticImageData } from "next/image";
+
+
+export interface ITextInputProps {
+  name: string;
+  type?: string;
+  placeholder?: string;
+  className?: string;
+  control: any;
+  errMsg?: string | null;
+  icon?: React.ReactNode;
+
+}
+
+
+// Input types helper
+export const InputType = {
+  EMAIL: "email",
+  TEXT: "text",
+  URL: "url",
+  NUMBER: "number",
+  DATE: "date",
+  PASSWORD: "password",
+  TEL: "tel",
+};
+
+// --- Types ---
+export interface NavItem {
+  name: string;
+  href: string;
+  icon: React.ElementType;
+  badge?: number;
+  children?: Omit<NavItem, 'children'>[];
+}
+
+
+export interface SidebarProps {
+  isCollapsed?: boolean;
+  onToggle?: () => void;
+}
+
+
+export interface LogoProps {
+  showLabel?: boolean;
+  textClassName?: string;   // control text color & size
+  logoSize?: number;        // control image size
+  className?: string;       // wrapper styling
+}
+
+export interface MenuItem {
+  id: string;
+  title: string;
+  url?: string;
+  icon?: React.ElementType;
+  dropdown?: MenuItem[];
+}
+
+
+export interface HeroImage {
+  id: number;
+  imageUrl: string;
+  title: string;
+  status: 'active' | 'inactive';
+}
+
+
+export interface RowActionProps {
+  editUrl?: string;           // Optional: Use if navigating to a page
+  onEdit?: () => void;        // Optional: Use if opening a modal/Popup
+  rowId: string;
+  deleteAction: (id: string) => void;
+}
+
+export interface Banner {
+  id: number;
+  title: string;
+  imageUrl: string;
+  status: 'active' | 'inactive';
+}
+
+
+
+export interface BannerFormModalProps {
+    isOpen: boolean;
+    onClose: () => void;
+    onSuccess: () => void;
+    banner?: Banner;
+}
+
+
+
+export interface MemberFormModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  onSuccess: () => void;
+  member?: any;
+  // Props to make it reusable
+  apiEndpoint: string; // e.g., 'team' or 'bod'
+  entityName: string;  // e.g., 'Team Member' or 'Board Member'
+}
