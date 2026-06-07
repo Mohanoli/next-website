@@ -4,8 +4,8 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: "http",
-        hostname: "api.website.magnus.com.np",
+        protocol: "https",
+        hostname: "api.sanakisan.magnus.com.np",
         pathname: "/uploads/**",
       },
     ],

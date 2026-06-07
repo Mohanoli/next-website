@@ -31,7 +31,7 @@ export const BannerFormModal = ({ isOpen, onClose, onSuccess, banner }: BannerFo
         if (banner) {
             setTitle(banner.title);
             setStatus(banner.status);
-            setPreview(process.env.NEXT_PUBLIC_ASSETS_URL ? `${process.env.NEXT_PUBLIC_ASSETS_URL}${banner.imageUrl}` : `http://localhost:5000${banner.imageUrl}`);
+            setPreview(process.env.NEXT_PUBLIC_ASSETS_URL ? `${process.env.NEXT_PUBLIC_ASSETS_URL}${banner.imageUrl}` : `https://api.sanakisan.magnus.com.np${banner.imageUrl}`);
             setImage(null);
         } else {
             setTitle("");

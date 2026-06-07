@@ -37,7 +37,7 @@ export default function CompanyProfilePage ()  {
                     });
                     if (data.logoUrl) {
                         if (data.logoUrl.startsWith('/uploads')) {
-                            setLogoPreview(`${process.env.NEXT_PUBLIC_BACKEND_URL || 'http://api.website.magnus.com.np'}${data.logoUrl}`);
+                            setLogoPreview(`${process.env.NEXT_PUBLIC_BACKEND_URL || 'https://api.sanakisan.magnus.com.np'}${data.logoUrl}`);
                         } else {
                             setLogoPreview(data.logoUrl);
                         }

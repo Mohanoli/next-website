@@ -3,7 +3,7 @@ import { toast } from "sonner";
 import Cookies from "js-cookie";
 
 const axiosInstance = axios.create({
-  baseURL: (process.env.NEXT_PUBLIC_API_URL || "http://api.website.magnus.com.np") + "/api",
+  baseURL: (process.env.NEXT_PUBLIC_API_URL || "https://api.sanakisan.magnus.com.np") + "/api",
   timeout: 60000,
   timeoutErrorMessage: "Server timed out...",
   headers: {

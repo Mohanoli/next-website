@@ -30,7 +30,7 @@ export const MemberFormModal = ({
     const [loading, setLoading] = useState(false);
 
     const fileInputRef = useRef<HTMLInputElement>(null);
-    const baseUrl = process.env.NEXT_PUBLIC_ASSETS_URL || "http://localhost:5000";
+    const baseUrl = process.env.NEXT_PUBLIC_ASSETS_URL || "https://api.sanakisan.magnus.com.np";
 
     // Reset or Populate form
     useEffect(() => {

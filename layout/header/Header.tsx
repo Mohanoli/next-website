@@ -36,7 +36,7 @@ export const Header = () => {
     const getLogoUrl = (url: string | undefined | null) => {
         if (!url) return "/logo.png";
         if (url.startsWith('/uploads')) {
-            return `${process.env.NEXT_PUBLIC_ASSETS_URL || 'http://api.website.magnus.com.np'}${url}`;
+            return `${process.env.NEXT_PUBLIC_ASSETS_URL || 'https://api.sanakisan.magnus.com.np'}${url}`;
         }
         return url;
     };

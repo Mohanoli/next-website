@@ -57,7 +57,7 @@ export const BannerTable = () => {
         banner.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
-    const baseUrl = process.env.NEXT_PUBLIC_ASSETS_URL || "http://localhost:5000";
+    const baseUrl = process.env.NEXT_PUBLIC_ASSETS_URL || "https://api.sanakisan.magnus.com.np";
 
     return (
         <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">

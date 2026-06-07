@@ -69,7 +69,7 @@ export const MemberTable = ({
         member.role.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
-    const baseUrl = process.env.NEXT_PUBLIC_ASSETS_URL || "http://localhost:5000"; // Base URL for images
+    const baseUrl = process.env.NEXT_PUBLIC_ASSETS_URL || "https://api.sanakisan.magnus.com.np"; // Base URL for images
 
     return (
         <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">

@@ -30,7 +30,7 @@ export default function CommittePage() {
 
             const fetchedData = res.result || [];
 
-            const baseUrl = process.env.NEXT_PUBLIC_ASSETS_URL || "http://localhost:5000";
+            const baseUrl = process.env.NEXT_PUBLIC_ASSETS_URL || "https://assets.sanakisan.magnus.com.np";
 
             const mappedMembers = fetchedData.map((m: any) => ({
                 id: m.id,
