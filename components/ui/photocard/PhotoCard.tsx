@@ -8,7 +8,7 @@ import { Director } from "@/lib/types/GlobalTypes";
 export const PhotoCard = ({ director, isFeatured = false }: { director: Director; isFeatured?: boolean }) => {
     return (
         <motion.div
-            className={`group relative bg-green-600 rounded-lg overflow-hidden shadow-sm border border-gray-100 hover:border-transparent hover:shadow-2xl transition-all duration-500 ${isFeatured ? "md:col-span-2 md:row-span-2" : ""}`}
+            className={`group relative bg-slate-200 rounded-lg overflow-hidden shadow-sm border border-gray-100 hover:border-transparent hover:shadow-2xl transition-all duration-500 ${isFeatured ? "md:col-span-2 md:row-span-2" : ""}`}
         >
             {/* Image Section */}
             <div className={`relative w-full overflow-hidden ${isFeatured ? 'h-80 md:h-96' : 'h-85'}`}>
